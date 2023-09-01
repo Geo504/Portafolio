@@ -12,7 +12,7 @@ export const Works = () => {
       initial={{ x: '100%' }}
       animate={{ x: '0%' }}
       exit={{ opacity: 1 }}
-      transition={{ duration: 0.3, ease: 'easeOut'}} >
+      transition={{ duration: 0.3, ease: 'easeInOut'}} >
       <div className={style.works_container}>
         <motion.h1 
           className={style.title}

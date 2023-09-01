@@ -1,0 +1,191 @@
+.form_container{
+  padding: 1rem;
+  border-radius: 1rem;
+  background: radial-gradient( circle farthest-corner at 10% 20%,  #004f2ae7 0%, #082518e7 90% );
+  box-shadow: 0 0 1rem #021401;
+}
+
+.input_container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.input_group{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  flex: 1;
+  color: #dcfddbd2;
+}
+.input_group input{
+  width: 100%;
+  min-width: 14rem;
+  margin-top: 1.5rem;
+  padding: 0rem 1.8rem 0.2rem 0.5rem;
+  border: none;
+  border-bottom: 3px solid #dcfddbd2;
+  outline: none;
+
+  color: whitesmoke;
+  background-color: transparent;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.input_group input:focus{
+  color: whitesmoke;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: 3px solid whitesmoke;
+  box-shadow: 0 0 1rem #13d129;
+  background-color: #4f744ea2;
+}
+
+
+.input_group label{
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+
+  font-weight: 500;
+  transition: 0.4s;
+}
+.form_icon{
+  position: absolute;
+  right: 0.1rem;
+  bottom: 0.3rem;
+  font-size: 1.5rem;
+}
+.input_group input:focus~label, 
+.input_group input:focus~.form_icon{
+  color: whitesmoke;
+}
+.input_group input:focus + label, 
+.input_group input:not(:placeholder-shown) + label {
+  transform: translateY(-100%);
+}
+
+
+.input_group span{
+  position: absolute;
+  left: 0.5rem;
+  top: 3.6rem;
+  color: #ff8c8c;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 0.95rem;
+}
+.textarea_box span{
+  position: absolute;
+  left: 0.5rem;
+  bottom: -0.8rem;
+  color: #ff8c8c;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 0.95rem;
+}
+.input_group .error input:focus{
+  color: #ff8c8c;
+  border-bottom: 3px solid #ff8c8c;
+  box-shadow: 0 0 1rem #ff8c8c;
+}
+.input_group .error input:focus + label,
+.input_group .error input:focus~.form_icon{
+  color: #ff8c8c;
+}
+
+
+
+.textarea_box{
+  position: relative;
+  width: 100%;
+}
+.textarea_box textarea{
+  margin-top: 2.5rem;
+  padding: 0.5rem 1rem;
+
+  border: 2px solid transparent;
+  border-radius: 0.8rem;
+  outline: none;
+  resize: none;
+
+  width: 100%;
+  min-height: 15rem;
+  background-color: #dcfddbd2;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.textarea_box textarea:focus{
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  box-shadow: 0 0 1rem #13d129;
+  background-color: #6b996ad2;
+}
+
+.textarea_box label{
+  position: absolute;
+  left: 0.5rem;
+  top: 2.8rem;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.input_container 
+.textarea_box textarea:focus~label{
+  color: whitesmoke;
+}
+.textarea_box textarea:focus~label, 
+.textarea_box textarea:not(:placeholder-shown) + label{
+  transform: translateY(-140%);
+  color: #dcfddbd2;
+}
+
+.textarea_icon{
+  position: absolute;
+  right: 0.5rem;
+  top: 2.8rem;
+  font-size: 1.5rem;
+  transition: 0.4s;
+}
+.input_container
+.textarea_box textarea:focus~.textarea_icon{
+  color: whitesmoke;
+}
+.textarea_box textarea:focus~.textarea_icon,
+.textarea_box textarea:not(:placeholder-shown)~.textarea_icon{
+  transform: translateY(-145%);
+  color: #dcfddbd2;
+}
+
+
+.textarea_box.error textarea:focus{
+  color: #ff8c8c;
+  border: 2px solid #ff8c8c;
+  box-shadow: 0 0 1rem #ff8c8c;
+}
+.textarea_box.error textarea:focus~label{
+  color: #ff8c8c;
+}
+.textarea_box.error textarea:focus~.textarea_icon{
+  color: #ff8c8c;
+}
+
+
+
+.btn_submit_container{
+  display: flex;
+  justify-content: center;
+}
+.btn_submit{
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  font-weight: 500;
+
+  transition: 0.4s;
+}
+.btn_submit:hover{
+  background-color: #0d680d99;
+  border: 2px solid #13d129;
+  color: #13d129;
+}

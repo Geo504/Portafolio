@@ -38,6 +38,7 @@
 }
 
 .title{
+  line-height: 4rem;
   font-size: 3rem;
   font-weight: 900;
   background: url(https://img.freepik.com/free-photo/backdrop-green-leaves_23-2147836966.jpg?w=360) center / cover no-repeat;

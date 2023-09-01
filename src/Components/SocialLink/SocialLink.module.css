@@ -1,0 +1,86 @@
+.social_tag_right{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  background-color: #acbb7879;
+  transition: 0.5s;
+}
+.social_tag_left{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  background-color:#889e48d2;
+  border-bottom: 2px solid #0d3c33;
+  border-top: 2px solid #0d3c33;
+  transition: 0.5s;
+}
+.social_tag_left span,
+.social_tag_right span{
+  margin-right: 0.5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.social_btn{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+
+  color: #0d3c33;
+  background-color: transparent;
+  border: 2px solid #0d3c33;
+  border-radius: 50%;
+  z-index: 5;
+  transition: 0.5s;
+}
+.social_btn:hover{
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  box-shadow: 0 0 0.8rem #26e600;
+
+}
+
+
+
+.social_tag_right:has(.social_btn:hover),
+.social_tag_left:has(.social_btn:hover){
+  color: white;
+  background-color: transparent;
+}
+.social_tag_right::before,
+.social_tag_left::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #0d3c33;
+  z-index: -1;
+  transition: 0.5s;
+}
+.social_tag_right:has(.social_btn:hover)::before,
+.social_tag_left:has(.social_btn:hover)::before{
+  width: 100%;
+}
+
+
+
+.img_container{
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 80%;
+}
+.img {
+  opacity: 0.85;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

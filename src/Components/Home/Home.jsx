@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import { Link } from "react-router-dom";
 
 import profile_img from '../../assets/Image/Profile_img.jpg'
 import { ParticlesBackground } from '../ParticlesBackground/ParticlesBackground';
@@ -14,7 +15,7 @@ export const Home = () => {
       initial={{ x: '100%' }}
       animate={{ x: '0%' }}
       exit={{ opacity: 1 }}
-      transition={{ duration: 0.3, ease: 'easeOut'}} >
+      transition={{ duration: 0.3, ease: 'easeInOut'}} >
       <ParticlesBackground />
       <div className={style.home_container}>
 
@@ -30,13 +31,25 @@ export const Home = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, itaque, quidem nihil accusantium qui culpa omnis placeat sit repellendus optio, blanditiis ducimus eaque quos! Atque repellat officiis facere at enim.
           </p>
           <div className={style.btn_container}>
-            <button className={style.btn_contact}>Contact Me!</button>
+            <Link className={style.btn_contact} to={'/Contact'}>Contact Me!</Link>
             <button className={style.btn_contact}>Download CV</button>
           </div>
           <div className={style.social_icons_container}>
-            <button className={style.social_icon}><BsGithub /></button>
-            <button className={style.social_icon}><BiLogoLinkedin /></button>
-            <button className={style.social_icon}><BiLogoGmail /></button>
+            <a
+              className={style.social_icon}
+              href='https://github.com/Geo504'
+              target='_blank'>
+              <BsGithub />
+            </a>
+            <a 
+              className={style.social_icon}
+              href='https://www.linkedin.com/in/geovanny-valladares-97975a196'
+              target='_blank'>
+              <BiLogoLinkedin />
+            </a>
+            <button className={style.social_icon}>
+              <BiLogoGmail />
+            </button>
           </div>  
         </motion.div>
         </div>

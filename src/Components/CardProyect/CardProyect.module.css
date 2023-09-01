@@ -1,11 +1,11 @@
 .card_container{
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  position: relative;
-  overflow: hidden;
 
-  /* border: 1px solid #4cff29; */
+  border: 2px solid #0d3c33;
   border-radius: 0.8rem;
   width: 100%;
   max-width: 20rem;
@@ -21,6 +21,45 @@
   .card_container{
     max-width: 25rem;
   }
+}
+
+
+.more_info_icon{
+  position: absolute;
+  margin: 0.5rem;
+  font-size: 2rem;
+  background-color: rgba(245, 245, 245, 0.577);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.more_info_icon:hover{
+  background-color: #0d3c33;
+  color: white;
+  box-shadow: 0 0 1rem #082a23;
+  transform: rotate(360deg);
+}
+.more_info_container{
+  position: absolute;
+  z-index: 20;
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 500;
+  background-color: #0d3c33cc;
+  backdrop-filter: blur(5px);
+}
+.close_icon{
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: white;
+  transition: 0.4s;
+}
+.close_icon:hover{
+  transform: scale(1.4) translateY(-0.2rem);
 }
 
 
@@ -51,7 +90,7 @@
 
 .body_container h5{
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.4rem;
   top: -33%;
@@ -62,7 +101,7 @@
 
   border: 2px solid #082518;
   border-radius: 1rem;
-  background-color: #4dff2953;
+  background-color: #89c07eb1;
   backdrop-filter: blur(5px);
 }
 .body_container p{
@@ -102,17 +141,17 @@
   font-size: 1.5rem;
 
   max-width: fit-content;
-  color: #00582fdc;
+  color: #0d3c33;
   background-color: transparent;
-  border: 2px solid #00582fdc;
+  border: 2px solid #0d3c33;
   border-radius: 50%;
   z-index: 5;
   transition: 0.5s;
 }
 .social_icon:hover{
-  color: #0c372f;
-  border: 2px solid #0c372f;
-  box-shadow: 0 0 0.8rem #26e600c9;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  box-shadow: 0 0 0.8rem #0d3c33;
 }
 .social_icon::before{
   content: "";
@@ -121,7 +160,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #8dba8da9;
+  background-color: #0d3c33;
   z-index: -1;
   transition: 0.5s;
 }

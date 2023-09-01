@@ -16,7 +16,7 @@ export const Skills = () => {
       initial={{ x: '100%' }}
       animate={{ x: '0%' }}
       exit={{ opacity: 1 }}
-      transition={{ duration: 0.3, ease: 'easeOut'}} >
+      transition={{ duration: 0.3, ease: 'easeInOut'}} >
       <div className={style.skills_container}>
 
         <motion.div 
