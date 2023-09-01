@@ -23,7 +23,7 @@ export const CardProyect = ({ proyect }) => {
         className={style.more_info_container}
         animate={{y: open ? '0%' :'-100%'}}
         transition={{ duration: 0.6, ease: 'easeInOut', type: 'spring', bounce: 0.5}}>
-        <h4 className='text-center'>{proyect.title}</h4>
+        <h4>{proyect.title}</h4>
         <p>{proyect.long_description}</p>
         <MdKeyboardDoubleArrowUp 
           className={style.close_icon} 
@@ -46,8 +46,18 @@ export const CardProyect = ({ proyect }) => {
             <BiLogoHtml5 className={style.tech_icon} />
           </div>
           <div className={style.link_container}>
-            <a className={style.social_icon} href={proyect.link_github}><BsGithub /></a>
-            <a className={style.social_icon} href={proyect.link_demo}><FiExternalLink /></a>
+            <a 
+              className={style.social_icon} 
+              href={proyect.link_github} 
+              target='_blank'>
+              <BsGithub />
+            </a>
+            <a 
+              className={style.social_icon} 
+              href={proyect.link_demo} 
+              target='_blank'>
+              <FiExternalLink />
+            </a>
           </div>
         </div>
       </div>
