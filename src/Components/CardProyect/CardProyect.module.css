@@ -1,0 +1,130 @@
+.card_container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+
+  /* border: 1px solid #4cff29; */
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 20rem;
+  min-width: 18rem;
+  aspect-ratio: 1/1.13;
+
+  transition: 0.4s;
+}
+.card_container:hover{
+  box-shadow: 0 0 0.5rem #082518;
+}
+@media screen and (max-width: 770px){
+  .card_container{
+    max-width: 25rem;
+  }
+}
+
+
+
+.img_container{
+  height: 65%;
+}
+.img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.body_container{
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.4rem;
+
+  box-shadow: 0 0 1rem #082518;
+  background-color: rgba(235, 255, 234, 0.953);
+}
+
+
+.body_container h5{
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  top: -33%;
+  right: 0;
+  margin: 0 0.5rem;
+  padding: 0 0.6rem 0.3rem 0.6rem;
+
+
+  border: 2px solid #082518;
+  border-radius: 1rem;
+  background-color: #4dff2953;
+  backdrop-filter: blur(5px);
+}
+.body_container p{
+  line-height: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.tech_container{
+  display: flex;
+  gap: 0.1rem;
+}
+.tech_icon{
+  font-size: 1.8rem;
+  color: #00582f9e;
+}
+
+
+.link_container{
+  display: flex;
+  gap: 0.5rem;
+}
+.social_icon{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+
+  max-width: fit-content;
+  color: #00582fdc;
+  background-color: transparent;
+  border: 2px solid #00582fdc;
+  border-radius: 50%;
+  z-index: 5;
+  transition: 0.5s;
+}
+.social_icon:hover{
+  color: #0c372f;
+  border: 2px solid #0c372f;
+  box-shadow: 0 0 0.8rem #26e600c9;
+}
+.social_icon::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #8dba8da9;
+  z-index: -1;
+  transition: 0.5s;
+}
+.social_icon:hover::before{
+  width: 100%;
+}

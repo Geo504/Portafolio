@@ -1,0 +1,54 @@
+.section{
+  position: absolute;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  background: linear-gradient(to right, #788946, #acbb78);
+}
+@media screen and (min-width: 1200px) {
+  .section{
+    padding: 0 6rem;
+  }
+}
+@media screen and (min-width: 670px) and (max-width: 1200px) {
+  .section{
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .section{
+    padding: 0 1rem;
+  }
+}
+
+
+.works_container{
+  padding: 2.3rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  flex-grow: 1;
+  min-height: 100vh;
+  color: #082518;
+}
+
+.title{
+  font-size: 3rem;
+  font-weight: 900;
+  background: url(https://img.freepik.com/free-photo/backdrop-green-leaves_23-2147836966.jpg?w=360) center / cover no-repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+}
+
+.cards_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

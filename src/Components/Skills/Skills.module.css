@@ -1,0 +1,127 @@
+.section{
+  position: absolute;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  #004f2a 0%, #082518 90% );
+}
+@media screen and (min-width: 1200px) {
+  .section{
+    padding: 0 6rem;
+  }
+}
+@media screen and (min-width: 670px) and (max-width: 1200px) {
+  .section{
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .section{
+    padding: 0 1rem;
+  }
+}
+
+
+
+.skills_container{
+  padding: 3rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1400px;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+@media screen and (max-width: 770px) {
+  .skills_container{
+    flex-wrap: wrap;
+  }
+}
+
+
+.title{
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+
+  background: url(https://img.freepik.com/premium-photo/texture-green-leaf-plant-close-up_58409-11875.jpg) center / cover no-repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+}
+
+
+.tech_container{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1.4rem;
+}
+.tech_title{
+  /* text-align: center; */
+  color: #13d129;
+}
+.tech_body{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  font-size: 2.5rem;
+  padding: 1rem;
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+}
+.tech_body p{
+  font-size: 1rem;
+  line-height: 0.8rem;
+  margin: 0;
+}
+@media screen and (max-width: 770px) {
+  .tech_container{
+    gap: 0.5rem;
+  }
+  .tech_body{
+    padding: 0.5rem;
+    /* flex-basis: calc(100% / 5); */
+  }
+}
+
+.about_container{
+  margin-bottom: 2rem;
+}
+.about_container p{
+  font-weight: 500;
+  margin: 0;
+}
+
+
+.studies_container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.study_container{
+  display: flex;
+  gap: 0.4rem;
+}
+.study_icon{
+  font-size: 1.8rem;
+  color: #13d129;
+}
+.study_text h5{
+  margin: 0;
+  color: #13d129;
+}
+.study_text p{
+  margin: 0;
+  
+}
