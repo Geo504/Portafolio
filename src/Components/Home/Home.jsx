@@ -28,7 +28,7 @@ export const Home = () => {
           <h2>Hi, I'm Geovanny Valladares</h2>
           <h1>Full-Stack Developer</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, itaque, quidem nihil accusantium qui culpa omnis placeat sit repellendus optio, blanditiis ducimus eaque quos! Atque repellat officiis facere at enim.
+            I am a dedicated and professional developer with a thirst for knowledge. I consider myself a self-taught, organized, and methodical individual with great attention to detail. My code is scalable, modular, and I am always seeking to improve my skills to provide more efficient and effective solutions.
           </p>
           <div className={style.btn_container}>
             <Link className={style.btn_contact} to={'/Contact'}>Contact Me!</Link>

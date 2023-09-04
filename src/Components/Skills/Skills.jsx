@@ -126,7 +126,7 @@ export const Skills = () => {
           <div className={style.about_container}>
             <h2 className={style.title}>About Me</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique et, amet corrupti dolores quae optio porro earum sapiente quidem perspiciatis sed harum. Rem error officiis dolor nisi, tenetur corrupti laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates a omnis sint at laudantium maxime laboriosam quis veritatis. Non sint fuga dignissimos tenetur expedita illum eius voluptatibus nesciunt dolores deserunt.
+              A dedicated and professional full-stack developer. My focus on code scalability and modularity allows me to develop efficient and flexible solutions. Additionally, I value teamwork and collaboration to achieve exceptional results. I am committed to staying up-to-date with the latest technologies and trends, enabling me to bring innovative ideas and creative solutions to the company. With my passion for web development and my ability to quickly adapt to new challenges, I can contribute significantly to the growth and success of the company. It's worth mentioning that all my designs are responsive.
             </p>
           </div>
 
@@ -139,7 +139,15 @@ export const Skills = () => {
                 <div className={style.study_text}>
                   <h5>Full-Stack Developer</h5>
                   <p>4Geeks Academy</p>
-                  <p>2021 - 2022</p>
+                  <p>2022</p>
+                </div>
+              </div>
+              <div className={style.study_container}>
+                <PiStudentFill className={style.study_icon}/>
+                <div className={style.study_text}>
+                  <h5>Master of Structural and Construction Engineer</h5>
+                  <p>Universitat Politècnica de Catalunya</p>
+                  <p>2019</p>
                 </div>
               </div>
               <div className={style.study_container} >

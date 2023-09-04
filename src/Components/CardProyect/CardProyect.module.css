@@ -157,8 +157,8 @@
   transition: 0.5s;
 }
 .social_icon:hover{
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
+  /* color: whitesmoke; */
+  /* border: 2px solid whitesmoke; */
   box-shadow: 0 0 0.8rem #0d3c33;
 }
 .social_icon::before{
@@ -168,7 +168,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #0d3c33;
+  background-color: #89c07eb1;
   z-index: -1;
   transition: 0.5s;
 }
