@@ -85,7 +85,7 @@
 
 .body_container{
   position: relative;
-  height: 7rem;
+  height: 7.3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -115,7 +115,7 @@
 .body_container p{
   line-height: 1.2rem;
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0rem;
 }
 
 
@@ -129,8 +129,6 @@
 .tech_container{
   display: flex;
   gap: 0.1rem;
-}
-.tech_icon{
   font-size: 1.8rem;
   color: #00582f9e;
 }
@@ -157,8 +155,6 @@
   transition: 0.5s;
 }
 .social_icon:hover{
-  /* color: whitesmoke; */
-  /* border: 2px solid whitesmoke; */
   box-shadow: 0 0 0.8rem #0d3c33;
 }
 .social_icon::before{

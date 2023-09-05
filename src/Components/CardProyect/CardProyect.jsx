@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import {motion} from 'framer-motion';
 
+import {tecnologyIcons} from './Utils/tecnologyIcons';
+
 import style from './CardProyect.module.css'
 import { BsGithub, BsInfoCircle } from 'react-icons/bs';
 import { FiExternalLink } from 'react-icons/fi';
@@ -40,10 +42,11 @@ export const CardProyect = ({ proyect }) => {
         <p>{proyect.description}</p>
         <div className={style.footer_container}>
           <div className={style.tech_container}>
-            <FaReact className={style.tech_icon} />
-            <BiLogoCss3 className={style.tech_icon} />
-            <FaBootstrap className={style.tech_icon} />
-            <BiLogoHtml5 className={style.tech_icon} />
+            {proyect.tecnologies.map((tech, index) => (
+              <div key={index}>
+                {tecnologyIcons[tech]}
+              </div>
+            ))}
           </div>
           <div className={style.link_container}>
             <a 
