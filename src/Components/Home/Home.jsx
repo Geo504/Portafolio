@@ -3,12 +3,18 @@ import { Link } from "react-router-dom";
 
 import profile_img from '../../assets/Image/Profile_img.jpg'
 import { ParticlesBackground } from '../ParticlesBackground/ParticlesBackground';
+import CV from '../../assets/pdf/CV.pdf'
 
 import style from './Home.module.css'
 import { BsGithub } from 'react-icons/bs';
 import { BiLogoLinkedin, BiLogoGmail } from 'react-icons/bi';
 
 export const Home = () => {
+  const copyLink = () => {
+    navigator.clipboard.writeText('geovannyvalladares94@gmail.com');
+    alert('Email Copied');
+  }
+
   return (
     <motion.section
       className={style.section}
@@ -31,8 +37,12 @@ export const Home = () => {
             I am a dedicated and professional developer with a thirst for knowledge. I consider myself a self-taught, organized, and methodical individual with great attention to detail. My code is scalable, modular, and I am always seeking to improve my skills to provide more efficient and effective solutions.
           </p>
           <div className={style.btn_container}>
-            <Link className={style.btn_contact} to={'/Contact'}>Contact Me!</Link>
-            <button className={style.btn_contact}>Download CV</button>
+            <Link className={style.btn_contact} to={'/Contact'}>
+              Contact Me!
+            </Link>
+            <a href={CV} className={style.btn_contact} download='CV Geovanny Valladares'>
+              Download CV
+            </a>
           </div>
           <div className={style.social_icons_container}>
             <a
@@ -47,7 +57,7 @@ export const Home = () => {
               target='_blank'>
               <BiLogoLinkedin />
             </a>
-            <button className={style.social_icon}>
+            <button className={style.social_icon} onClick={copyLink}>
               <BiLogoGmail />
             </button>
           </div>  

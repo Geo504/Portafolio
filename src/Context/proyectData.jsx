@@ -20,16 +20,6 @@ export const proyectsData = [
     link_demo: 'https://github.com/Geo504/Star-Wars_API'
   },
   {
-    id: 8,
-    img: 'https://i.ibb.co/rsCCv8C/todolist.png',
-    title: 'To-Do List',
-    description: 'A To-do app connected to an external API that will save your tasks.',
-    long_description: 'The classic to-do list to improve skills in React, such as state management and event handling, with clean and structured code. Using libraries like react-icons, uuid, and others. Using fetch to get the data from the API.',
-    tecnologies: ["React", "Css", "Bootstrap", "Html"],
-    link_github: 'https://github.com/Geo504/To-do-List',
-    link_demo: 'https://github.com/Geo504/To-do-List'
-  },
-  {
     id: 2,
     img: 'https://i.ibb.co/7yTrHn5/322shots-so.jpg',
     title: 'Contact List',
@@ -37,17 +27,17 @@ export const proyectsData = [
     long_description: 'An agenda app to improve skills in React such as state management, event handling, and context management. Confirmation of actions such as deleting contacts and editing. Also, the app saves the contacts in an external API which was implemented for asynchronous calls. With libraries like react-icons, uuid, formik, react-router-dom, react-spinners, etc.',
     tecnologies: ["React", "Css", "Bootstrap", "Html"],
     link_github: 'https://github.com/Geo504/Agenda-app',
-    link_demo: 'https://github.com/Geo504/Agenda-app'
+    link_demo: 'https://agenda-app-two.vercel.app/'
   },
   {
-    id: 3,
-    img: 'https://i.ibb.co/6s7gg3M/image-720.png',
-    title: 'Cronometer',
-    description: 'Timer and chronometer app with a time format that sends alerts at the time we indicate.',
-    long_description: 'The objective of this project was to gain better knowledge in React such as: creating a format to convert time into minutes and seconds, handling time intervals, states, useEffect(), among others. In addition to using bootstrap with a beautiful and simple minimalist style.',
+    id: 8,
+    img: 'https://i.ibb.co/rsCCv8C/todolist.png',
+    title: 'To-Do List',
+    description: 'A To-do app connected to an external API that will save your tasks.',
+    long_description: 'The classic to-do list to improve skills in React, such as state management and event handling, with clean and structured code. Using libraries like react-icons, uuid, and others. Using fetch to get the data from the API.',
     tecnologies: ["React", "Css", "Bootstrap", "Html"],
-    link_github: 'https://github.com/Geo504/Cronometer',
-    link_demo: 'https://github.com/Geo504/Cronometer'
+    link_github: 'https://github.com/Geo504/To-do-List',
+    link_demo: 'https://to-do-list-kappa-kohl.vercel.app/'
   },
   {
     id: 4,
@@ -57,7 +47,17 @@ export const proyectsData = [
     long_description: 'This project uses methodologies like useContext, useState, customHooks, useEffect, etc. It also connects with the Star Wars API, making 30 simultaneous calls to decrease loading times. Libraries such as react-router-dom, formik, react-spinners, etc. were used. It has a beautiful and modern design that matches the theme.',
     tecnologies: ["React", "Css", "Bootstrap", "Html"],
     link_github: 'https://github.com/Geo504/Star-Wars-Blog',
-    link_demo: 'https://github.com/Geo504/Star-Wars-Blog'
+    link_demo: 'https://star-wars-blog-one.vercel.app/'
+  },
+  {
+    id: 3,
+    img: 'https://i.ibb.co/6s7gg3M/image-720.png',
+    title: 'Cronometer',
+    description: 'Timer and chronometer app with a time format that sends alerts at the time we indicate.',
+    long_description: 'The objective of this project was to gain better knowledge in React such as: creating a format to convert time into minutes and seconds, handling time intervals, states, useEffect(), among others. In addition to using bootstrap with a beautiful and simple minimalist style.',
+    tecnologies: ["React", "Css", "Bootstrap", "Html"],
+    link_github: 'https://github.com/Geo504/Cronometer',
+    link_demo: 'https://cronometer-three.vercel.app/'
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const proyectsData = [
     long_description: 'A basic landing page to learn the basic concepts of React. Fully responsive and with a modern design.',
     tecnologies: ["React", "Css", "Bootstrap", "Html"],
     link_github: 'https://github.com/Geo504/Landing-page',
-    link_demo: 'https://github.com/Geo504/Landing-page'
+    link_demo: 'https://landing-page-sandy-alpha.vercel.app/'
   }
  
 ]

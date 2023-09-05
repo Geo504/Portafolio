@@ -5,10 +5,15 @@ import { BsGithub } from 'react-icons/bs';
 import { BiLogoLinkedin, BiLogoGmail } from 'react-icons/bi';
 
 export const SocialLink = () => {
+  const copyLink = () => {
+    navigator.clipboard.writeText('geovannyvalladares94@gmail.com');
+    alert('Email Copied');
+  }
+
   return (
     <>
       <div className={style.social_tag_left}>
-        <button className={style.social_btn}>
+        <button className={style.social_btn} onClick={copyLink}>
           <BiLogoGmail />
         </button>
         <span>geovannyvalladares94@gmail.com</span>
