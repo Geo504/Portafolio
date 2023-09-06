@@ -135,7 +135,7 @@ export const Skills = () => {
                 <div className={style.study_text}>
                   <h5>Full-Stack Developer</h5>
                   <p>4Geeks Academy</p>
-                  <p>2022</p>
+                  <p>2023</p>
                 </div>
               </div>
               <div className={style.study_container}>
@@ -143,7 +143,7 @@ export const Skills = () => {
                 <div className={style.study_text}>
                   <h5>Master of Structural and Construction Engineer</h5>
                   <p>Universitat Politècnica de Catalunya</p>
-                  <p>2019</p>
+                  <p>2019 - 2020</p>
                 </div>
               </div>
               <div className={style.study_container} >

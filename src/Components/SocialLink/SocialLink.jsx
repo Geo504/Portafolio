@@ -1,4 +1,4 @@
-import conect from '../../assets/svg/conect.svg'
+import conect from '../../assets/Image/pluma.png'
 
 import style from './SocialLink.module.css'
 import { BsGithub } from 'react-icons/bs';

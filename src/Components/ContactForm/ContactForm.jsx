@@ -1,5 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import { contactSchema } from '../../Schemas/contactSchema.js';
 
@@ -10,6 +12,7 @@ import { BsTelephone } from 'react-icons/bs';
 import { SlEnvolopeLetter } from 'react-icons/sl';
 
 export const ContactForm = () => {
+  const form = useRef();
 
   const {register, handleSubmit, reset, formState: {errors}} = useForm({
     resolver: yupResolver(contactSchema),
@@ -17,14 +20,20 @@ export const ContactForm = () => {
 
 
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
+    console.log(form.current);
+    emailjs.sendForm('service_aadnqkq', 'template_fbplw4s', form.current, 'QmWdYdh4A3pL1_c_j')
+    .then((result) => {
+      alert('Message sent successfully');
+    }, (error) => {
+      alert('Something went wrong, please try again');
+    });
     reset();
   });
 
   return (
     <>
     <div className={style.form_container}>
-      <form onSubmit={onSubmit}>
+      <form ref={form} onSubmit={onSubmit}>
         <div className={style.input_container}>
 
           <div className={style.input_group}>
