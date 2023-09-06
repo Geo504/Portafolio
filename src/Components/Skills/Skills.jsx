@@ -40,10 +40,6 @@ export const Skills = () => {
                   <p>CSS</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
-                  <FaBootstrap className={style.tech_icon} />
-                  <p>Bootstrap</p>
-                </div>
-                <div className='d-flex flex-column align-items-center'>
                   <BiLogoJavascript className={style.tech_icon} />
                   <p>JavaScript</p>
                 </div>
@@ -98,8 +94,8 @@ export const Skills = () => {
                   <p>Motion</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
-                  <BiLogoFlask className={style.tech_icon} />
-                  <p>Flask</p>
+                  <FaBootstrap className={style.tech_icon} />
+                  <p>Bootstrap</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
                   <SiTailwindcss className={style.tech_icon} />
