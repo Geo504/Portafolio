@@ -53,7 +53,7 @@ export const Home = () => {
             </a>
             <a 
               className={style.social_icon}
-              href='https://www.linkedin.com/in/geovanny-valladares-97975a196'
+              href='https://www.linkedin.com/in/geovanny-valladares'
               target='_blank'>
               <BiLogoLinkedin />
             </a>

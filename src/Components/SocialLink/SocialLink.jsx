@@ -32,11 +32,11 @@ export const SocialLink = () => {
       <div className={style.social_tag_left}>
         <a 
           className={style.social_btn}
-          href='https://www.linkedin.com/in/geovanny-valladares-97975a196'
+          href='https://www.linkedin.com/in/geovanny-valladares'
           target='_blank' >
           <BiLogoLinkedin />
         </a>
-        <span>www.linkedin.com/in/geovanny-valladares-97975a196</span>
+        <span>www.linkedin.com/in/geovanny-valladares</span>
       </div>
 
       <div className={style.img_container}>
