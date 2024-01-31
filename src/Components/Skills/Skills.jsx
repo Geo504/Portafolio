@@ -6,7 +6,8 @@ import { FaReact, FaBootstrap, FaPython } from 'react-icons/fa';
 import { BiLogoCss3, BiLogoHtml5, BiLogoFlask, BiLogoPostgresql, BiLogoJavascript } from 'react-icons/bi';
 import { PiStudentFill } from 'react-icons/pi';
 import { GrMysql } from 'react-icons/gr';
-import { SiFramer, SiTailwindcss, SiJest } from 'react-icons/si';
+import { SiFramer, SiTailwindcss, SiJest, SiNextdotjs, SiExpress } from 'react-icons/si';
+import { FaNodeJs } from "react-icons/fa";
 import { TbBrandSocketIo } from 'react-icons/tb';
 
 export const Skills = () => {
@@ -47,6 +48,10 @@ export const Skills = () => {
                   <FaReact className={style.tech_icon} />
                   <p>React</p>
                 </div>
+                <div className='d-flex flex-column align-items-center'>
+                  <SiNextdotjs className={style.tech_icon} />
+                  <p>Next</p>
+                </div>
                 
               </div>
             </div>
@@ -63,6 +68,10 @@ export const Skills = () => {
                 <div className='d-flex flex-column align-items-center'>
                   <BiLogoFlask className={style.tech_icon} />
                   <p>Flask</p>
+                </div>
+                <div className='d-flex flex-column align-items-center'>
+                  <FaNodeJs className={style.tech_icon} />
+                  <p>Node</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
                   <GrMysql className={style.tech_icon} />
@@ -100,6 +109,10 @@ export const Skills = () => {
                 <div className='d-flex flex-column align-items-center'>
                   <SiTailwindcss className={style.tech_icon} />
                   <p>Tailwind</p>
+                </div>
+                <div className='d-flex flex-column align-items-center'>
+                  <SiExpress className={style.tech_icon} />
+                  <p>Express</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
                   <SiJest className={style.tech_icon} />

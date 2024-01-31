@@ -1,7 +1,27 @@
 export const proyectsData = [
   {
+    id: 7,
+    img: 'https://i.ibb.co/gZ0Lfjk/dewedd.jpg',
+    title: 'DeWedd',
+    description: 'Wedding app to organize your wedding, with a marketplace, budget, loans and more...',
+    long_description: "DeWedd is a full-stack app created with React, Python, and PostgreSQL. On the frontend, technologies such as HTML, CSS, Tailwind, React.js, framer motion, formik and yup were used, connecting with external API's like AWS. Applying knowledge such as password encryption, email validation, and user authentication (JWT). On the backend, technologies such as Python, Flask, SQLAlchemy, JWT, Bcrypt, Swagger, and Postgre were used.",
+    tecnologies: ["React", "Tailwind", "Html", "Python", "Flask", "Postgre"],
+    link_github: 'https://github.com/adminITdeWedd/deWedd',
+    link_demo: 'https://dewedd.com'
+  },
+  {
+    id: 8,
+    img: 'https://i.ibb.co/m4HCWqp/music-shop.png',
+    title: 'Music Shop',
+    description: 'MarketPlace app to buy your favorite instruments, accessories, tickets, shirts and anything related with music.',
+    long_description: "Music Shop is a full-stack app created with React, Python, and PostgreSQL. On the frontend, technologies such as HTML, CSS, Tailwind, Next.js, connecting with external API's like Cloudinary. Applying knowledge such in Next 13, cookies, and user authentication (JWT). On the backend, technologies such as Node.Js, Express, Sequelize, JWT, Bcrypt, and Postgre were used.",
+    tecnologies: ["Next", "Css","Tailwind", "Html", "Node", "Express", "Postgre"],
+    link_github: 'https://github.com/Geo504/MusicShop',
+    link_demo: 'https://music-shop-mu.vercel.app'
+  },
+  {
     id: 1,
-    img: 'https://i.ibb.co/3Tdqz6V/cosmos-1.jpg',
+    img: 'https://i.ibb.co/jHy6rX8/cosmos-1.jpg',
     title: 'Cosmos App',
     description: 'A Dating-App created from zero with database, chats, matching, profile, and much more...',
     long_description: "Cosmos is a full-stack app created with React, Python, and SQLite. On the frontend, technologies such as HTML, CSS, Bootstrap, React.js, socket.io, formik and yup were used, connecting with external API's like Cloudinary. Applying knowledge such as password encryption, email validation, and user authentication (JWT). On the backend, technologies such as Python, Flask, SQLAlchemy, JWT, Bcrypt, Socket.io, and SQLite were used.",
@@ -11,7 +31,7 @@ export const proyectsData = [
   },
   {
     id: 5,
-    img: 'https://i.ibb.co/92QQJYx/starwars-full.jpg',
+    img: 'https://i.ibb.co/bRWFVcx/starwars-full.jpg',
     title: 'Star Wars Blog',
     description: 'Full-stack Star Wars blog featuring some of the favorite characters from the saga.',
     long_description: "You can create your user with a name and email, this app has protected routes to save your favorites list. Access to dynamic routes and user authentication at all times. MySQL database, backend with Python, Flask, SQLAlchemy, JWT, Bcrypt, dotenv and more...",
@@ -41,7 +61,7 @@ export const proyectsData = [
   },
   {
     id: 4,
-    img: 'https://i.ibb.co/614DYXj/starwar-3.jpg',
+    img: 'https://i.ibb.co/T1DG61f/starwar-3.jpg',
     title: 'Star Wars Blog',
     description: 'Complete frontend project, connected with external APIs and modularized code.',
     long_description: 'This project uses methodologies like useContext, useState, customHooks, useEffect, etc. It also connects with the Star Wars API, making 30 simultaneous calls to decrease loading times. Libraries such as react-router-dom, formik, react-spinners, etc. were used. It has a beautiful and modern design that matches the theme.',
@@ -50,18 +70,8 @@ export const proyectsData = [
     link_demo: 'https://star-wars-blog-one.vercel.app/'
   },
   {
-    id: 3,
-    img: 'https://i.ibb.co/6s7gg3M/image-720.png',
-    title: 'Cronometer',
-    description: 'Timer and chronometer app with a time format that sends alerts at the time we indicate.',
-    long_description: 'The objective of this project was to gain better knowledge in React such as: creating a format to convert time into minutes and seconds, handling time intervals, states, useEffect(), among others. In addition to using bootstrap with a beautiful and simple minimalist style.',
-    tecnologies: ["React", "Css", "Bootstrap", "Html"],
-    link_github: 'https://github.com/Geo504/Cronometer',
-    link_demo: 'https://cronometer-three.vercel.app/'
-  },
-  {
     id: 6,
-    img: 'https://i.ibb.co/chhn7YM/landing-Page.jpg',
+    img: 'https://i.ibb.co/5sc5GnQ/landing-Page.jpg',
     title: 'Landing Page',
     description: 'Landing page created from zero using HTML, CSS, and Bootstrap.',
     long_description: 'A basic landing page to learn the basic concepts of React. Fully responsive and with a modern design.',
