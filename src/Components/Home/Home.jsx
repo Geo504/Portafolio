@@ -40,7 +40,7 @@ export const Home = () => {
             <Link className={style.btn_contact} to={'/Contact'}>
               Contact Me!
             </Link>
-            <a href={CV} className={style.btn_contact} download='CV Geovanny Valladares'>
+            <a href={CV} className={style.btn_contact} download='CV_Geovanny_Valladares'>
               Download CV
             </a>
           </div>
