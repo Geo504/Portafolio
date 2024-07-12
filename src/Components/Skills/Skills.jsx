@@ -3,12 +3,12 @@ import {motion} from 'framer-motion';
 import style from './Skills.module.css'
 import { BsGithub } from 'react-icons/bs';
 import { FaReact, FaBootstrap, FaPython } from 'react-icons/fa';
-import { BiLogoCss3, BiLogoHtml5, BiLogoFlask, BiLogoPostgresql, BiLogoJavascript } from 'react-icons/bi';
+import { BiLogoCss3, BiLogoHtml5, BiLogoFlask, BiLogoPostgresql, BiLogoJavascript, BiLogoTypescript  } from 'react-icons/bi';
 import { PiStudentFill } from 'react-icons/pi';
-import { GrMysql } from 'react-icons/gr';
-import { SiFramer, SiTailwindcss, SiJest, SiNextdotjs, SiExpress } from 'react-icons/si';
+import { SiFramer, SiTailwindcss, SiJest, SiNextdotjs, SiExpress, SiMongodb } from 'react-icons/si';
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandSocketIo } from 'react-icons/tb';
+import { GrDocker } from "react-icons/gr";
 
 export const Skills = () => {
   return (
@@ -45,6 +45,10 @@ export const Skills = () => {
                   <p>JavaScript</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
+                  <BiLogoTypescript   className={style.tech_icon} />
+                  <p>TypeScript</p>
+                </div>
+                <div className='d-flex flex-column align-items-center'>
                   <FaReact className={style.tech_icon} />
                   <p>React</p>
                 </div>
@@ -66,16 +70,16 @@ export const Skills = () => {
                   <p>Python</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
-                  <BiLogoFlask className={style.tech_icon} />
-                  <p>Flask</p>
-                </div>
-                <div className='d-flex flex-column align-items-center'>
                   <FaNodeJs className={style.tech_icon} />
                   <p>Node</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
-                  <GrMysql className={style.tech_icon} />
-                  <p>MySQL</p>
+                  <BiLogoFlask className={style.tech_icon} />
+                  <p>Flask</p>
+                </div>
+                <div className='d-flex flex-column align-items-center'>
+                  <SiMongodb  className={style.tech_icon} />
+                  <p>MongoDB</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
                   <BiLogoPostgresql className={style.tech_icon} />
@@ -99,24 +103,24 @@ export const Skills = () => {
                   <p>GitHub</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
-                  <SiFramer className={style.tech_icon} />
-                  <p>Motion</p>
+                  <SiExpress className={style.tech_icon} />
+                  <p>Express</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
-                  <FaBootstrap className={style.tech_icon} />
-                  <p>Bootstrap</p>
+                  <GrDocker className={style.tech_icon} />
+                  <p>Docker</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
                   <SiTailwindcss className={style.tech_icon} />
                   <p>Tailwind</p>
                 </div>
                 <div className='d-flex flex-column align-items-center'>
-                  <SiExpress className={style.tech_icon} />
-                  <p>Express</p>
-                </div>
-                <div className='d-flex flex-column align-items-center'>
                   <SiJest className={style.tech_icon} />
                   <p>Jest</p>
+                </div>
+                <div className='d-flex flex-column align-items-center'>
+                  <FaBootstrap className={style.tech_icon} />
+                  <p>Bootstrap</p>
                 </div>
 
               </div>
@@ -135,7 +139,7 @@ export const Skills = () => {
           <div className={style.about_container}>
             <h2 className={style.title}>About Me</h2>
             <p>
-              A dedicated and professional full-stack developer. My focus on code scalability and modularity allows me to develop efficient and flexible solutions. Additionally, I value teamwork and collaboration to achieve exceptional results. I am committed to staying up-to-date with the latest technologies and trends, enabling me to bring innovative ideas and creative solutions to the company. With my passion for web development and my ability to quickly adapt to new challenges, I can contribute significantly to the growth and success of the company. It's worth mentioning that all my designs are responsive.
+              A dedicated and professional full-stack developer. My focus on code scalability and modularity allows me to develop efficient and flexible solutions. Additionally, I value teamwork and collaboration to achieve exceptional results. I am committed to staying up-to-date with the latest technologies and trends, enabling me to bring innovative ideas and creative solutions to the company. With my passion for web development and my ability to quickly adapt to new challenges, I can contribute significantly to the growth and success of the company. I also have experience working with clean architectures, Domain-Driven Design (DDD), Object-Oriented Programming (OOP), and Agile methodologies. It's worth mentioning that all my designs are responsive.
             </p>
           </div>
 
